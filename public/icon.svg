@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#090d16"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10b981"/>
+      <stop offset="100%" stop-color="#06b6d4"/>
+    </linearGradient>
+    <linearGradient id="glowGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#34d399"/>
+      <stop offset="100%" stop-color="#38bdf8"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Base background with rounded corners -->
+  <rect width="512" height="512" rx="112" fill="url(#bgGrad)"/>
+  <rect x="12" y="12" width="488" height="488" rx="100" fill="none" stroke="#1e293b" stroke-width="4"/>
+
+  <!-- Clinical Caduceus / Nutrition Leaf / Helix Geometry -->
+  <g transform="translate(256, 256)">
+    <!-- Central Longevity Stem / Axis -->
+    <path d="M0 -150 L0 150" stroke="url(#accentGrad)" stroke-width="14" stroke-linecap="round"/>
+    
+    <!-- Top Medical Cross Accent -->
+    <path d="M-30 -110 L30 -110 M0 -140 L0 -80" stroke="#34d399" stroke-width="10" stroke-linecap="round"/>
+
+    <!-- Left Nutrition Leaf Wing -->
+    <path d="M0 -60 C-90 -100 -140 -20 -130 50 C-120 120 -30 110 0 140" fill="none" stroke="url(#accentGrad)" stroke-width="16" stroke-linecap="round"/>
+    
+    <!-- Right Longevity Arc -->
+    <path d="M0 -60 C90 -100 140 -20 130 50 C120 120 30 110 0 140" fill="none" stroke="url(#glowGrad)" stroke-width="16" stroke-linecap="round"/>
+
+    <!-- Cellular Core Nodes -->
+    <circle cx="0" cy="-60" r="16" fill="#10b981"/>
+    <circle cx="-65" cy="15" r="12" fill="#06b6d4"/>
+    <circle cx="65" cy="15" r="12" fill="#34d399"/>
+    <circle cx="0" cy="80" r="14" fill="#38bdf8"/>
+    <circle cx="0" cy="140" r="10" fill="#10b981"/>
+  </g>
+</svg>

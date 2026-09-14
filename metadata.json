@@ -1,0 +1,6 @@
+{
+  "name": "Dietas al Día",
+  "description": "Prototipo de alta fidelidad de nutrición clínica para médicos nutricionistas con historias clínicas, catálogos terapéuticos y motor de apoyo a la toma de decisiones.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
